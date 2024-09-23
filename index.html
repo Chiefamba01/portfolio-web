@@ -3,133 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shingai Chifamba - Data Scientist | Computer Vision Enthusiast | Web Developer</title>
+    <title>Shingai Chifamba - Data Scientist</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333333;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
         }
         header {
-            background-color: #ffffff;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 2px solid #dddddd;
+            background-color: #007acc;
+            color: #fff;
+            padding: 50px 0;
         }
         header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: #333333;
-        }
-        nav {
-            text-align: center;
-            margin: 20px 0;
+            font-size: 3rem;
         }
         nav a {
-            color: #007acc;
-            text-decoration: none;
+            color: #fff;
             margin: 0 15px;
-            font-size: 1.2em;
+            font-size: 1.2rem;
         }
-        section {
-            padding: 40px;
-            max-width: 800px;
-            margin: 0 auto;
+        .section-padding {
+            padding: 60px 0;
         }
-        section h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            color: #333333;
-        }
-        .projects, .blog {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .projects div, .blog div {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-            border: 1px solid #dddddd;
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         footer {
-            background-color: #ffffff;
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
-            padding: 20px;
-            border-top: 2px solid #dddddd;
-        }
-        footer p {
-            margin: 5px 0;
-            color: #555555;
-        }
-        footer a {
-            color: #007acc;
-            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <header>
+    <header class="text-center">
         <h1>Shingai Chifamba</h1>
         <p>Data Scientist | Computer Vision Enthusiast | Web Developer</p>
     </header>
     
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
+    <nav class="nav justify-content-center bg-dark py-3">
+        <a href="#about" class="nav-link">About Me</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#blog" class="nav-link">Blog</a>
+        <a href="#contact" class="nav-link">Contact</a>
     </nav>
     
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I’m Shingie, a Data Science major with a passion for computer vision and machine learning. I specialize in developing real-time applications, web mining, and computer vision technologies. Currently, I’m working on face recognition technologies, with a strong interest in leveraging AI to create innovative solutions that impact daily life. In my spare time, I explore advancements in neural networks and their applications in autonomous systems.</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div>
-            <h3>Face Recognition App</h3>
-            <p>A real-time face recognition application using OpenCV and deep learning models, capable of identifying and verifying individuals with high accuracy.</p>
-        </div>
-        <div>
-            <h3>Credit Card Fraud Detection</h3>
-            <p>Developed a machine learning model that detects fraudulent transactions with a high precision rate, utilizing ensemble techniques and anomaly detection algorithms.</p>
-        </div>
-        <div>
-            <h3>AI Lead Gen Bot</h3>
-            <p>An intelligent bot designed to automate lead generation processes by analyzing web content and identifying potential clients using natural language processing and web scraping.</p>
+    <section id="about" class="section-padding text-center">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I’m Shingie, a Data Science major with a passion for computer vision and machine learning. I specialize in developing real-time applications, web mining, and computer vision technologies. Currently, I’m working on face recognition technologies, with a strong interest in leveraging AI to create innovative solutions that impact daily life. In my spare time, I explore advancements in neural networks and their applications in autonomous systems.</p>
         </div>
     </section>
     
-    <section id="blog">
-        <h2>Blog</h2>
-        <div>
-            <h3>Exploring Cloud Solutions for Data Science</h3>
-            <p>An exploration of the most effective cloud platforms for data-intensive applications, comparing AWS, Azure, and Google Cloud for their offerings in machine learning and big data.</p>
+    <section id="projects" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Recognition App</h5>
+                            <p class="card-text">A real-time face recognition application using OpenCV and deep learning models, capable of identifying and verifying individuals with high accuracy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Credit Card Fraud Detection</h5>
+                            <p class="card-text">Developed a machine learning model that detects fraudulent transactions with a high precision rate, utilizing ensemble techniques and anomaly detection algorithms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">AI Lead Gen Bot</h5>
+                            <p class="card-text">An intelligent bot designed to automate lead generation processes by analyzing web content and identifying potential clients using natural language processing and web scraping.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <h3>The Growing Importance of Facial Recognition Technologies</h3>
+    </section>
+    
+    <section id="blog" class="section-padding text-center">
+        <div class="container">
+            <h2>Blog</h2>
             <p>An in-depth look into the rising significance of facial recognition in enhancing security systems, personal identification, and various mobile applications.</p>
         </div>
     </section>
     
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me via email or connect with me on social media:</p>
-        <p>Email: <a href="mailto:chiefambasd@gmail.com">chiefambasd@gmail.com</a></p>
-        <p>Facebook: <a href="https://www.facebook.com/profile.php?id=100083167046942&mibextid=ZbWKwL" target="_blank">Shingai Chifamba</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/chiefamba-shingai-717140290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Shingai Chifamba</a></p>
-        <p>X (Twitter): <a href="https://x.com/chiefambasd?t=9TP9B_wsl6efEgBxys1iVA&s=08" target="_blank">@chiefambasd</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/chiefambasd?igsh=d29mYmdzdTNscWVy" target="_blank">@chiefambasd</a></p>
+    <section id="contact" class="section-padding bg-light">
+        <div class="container text-center">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me via email or connect with me on social media:</p>
+            <p>Email: <a href="mailto:chiefambasd@gmail.com">chiefambasd@gmail.com</a></p>
+            <p>Facebook: <a href="https://www.facebook.com/profile.php?id=100083167046942&mibextid=ZbWKwL" target="_blank">Shingai Chifamba</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/chiefamba-shingai-717140290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Shingai Chifamba</a></p>
+            <p>X (Twitter): <a href="https://x.com/chiefambasd?t=9TP9B_wsl6efEgBxys1iVA&s=08" target="_blank">@chiefambasd</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/chiefambasd?igsh=d29mYmdzdTNscWVy" target="_blank">@chiefambasd</a></p>
+        </div>
     </section>
     
     <footer>
         <p>&copy; 2024 Shingai Chifamba</p>
         <p>Developed with passion for data science and web technologies.</p>
     </footer>
+
+    <!-- Bootstrap JS and dependencies (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
